@@ -1,0 +1,437 @@
+:root {
+    --deep-teal: #004E64;
+    --ocean-blue: #00A5CF;
+    --mint: #9FFFCB;
+    --sunshine: #F6AE2D;
+    --sunset: #F26419;
+    --ink: #12414F;
+}
+
+body {
+    color: var(--ink);
+    background-color: #ffffff;
+    padding-top: 56px;
+}
+
+h2 {
+    color: var(--deep-teal);
+    font-weight: 700;
+}
+
+h4 {
+    color: var(--deep-teal);
+    font-weight: 700;
+    border-bottom: 3px solid var(--sunshine);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+ol li::marker {
+    color: var(--sunset);
+    font-weight: 700;
+}
+
+.text-primary {
+    color: #021d25 !important;
+}
+
+section .text-secondary {
+    color: var(--ink) !important;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--ocean-blue);
+    outline-offset: 2px;
+}
+
+.navbar.bg-dark {
+    background-color: var(--deep-teal) !important;
+    border-bottom: 3px solid var(--sunshine);
+}
+
+.navbar-brand {
+    color: var(--mint) !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--mint) !important;
+}
+
+.navbar .nav-link.active {
+    color: var(--sunshine) !important;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border-color: var(--mint);
+}
+
+.navbar .btn-light,
+section#home .btn-light {
+    background-color: var(--sunshine);
+    border-color: var(--sunshine);
+    color: var(--deep-teal);
+    font-weight: 600;
+}
+
+.navbar .btn-light:hover,
+section#home .btn-light:hover,
+section#home .btn-light:focus {
+    background-color: var(--sunset);
+    border-color: var(--sunset);
+    color: #ffffff;
+}
+
+section#home {
+    background: linear-gradient(135deg, var(--deep-teal) 0%, #007a9c 100%) !important;
+    border-bottom: 4px solid var(--sunshine);
+}
+
+section#home blockquote footer {
+    color: var(--mint);
+}
+
+section#home .btn-light {
+    font-weight: 700;
+}
+
+section.bg-light {
+    background-color: var(--mint) !important;
+    border-bottom: 4px solid var(--ocean-blue) !important;
+}
+
+section.bg-light h1 {
+    color: var(--deep-teal);
+    font-weight: 800;
+}
+
+section.bg-light .text-secondary {
+    color: var(--deep-teal) !important;
+    font-weight: 500;
+}
+
+.custom-bg-image {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    min-height: 400px;
+}
+
+.custom-bg-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://cdn.sanity.io/images/nxpteyfv/goguides/ec900c99793f50b69dc76672c4c1d69e2638576e-1600x1066.jpg");
+    background-size: cover;
+    background-position: calc(25%) center;
+    filter: blur(2px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.custom-bg-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 78, 100, 0.45);
+    z-index: -1;
+}
+
+.custom-bg-image.active,
+.custom-bg-image.carousel-item-next,
+.custom-bg-image.carousel-item-prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-bg-image blockquote {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.custom-bg-image .btn {
+    text-shadow: none;
+}
+
+.hero-bali::before {
+    background-image: url("https://media.audleytravel.com/-/media/images/home/southeast-asia/indonesia/places/gi_475519262_pura_ulun_danu_bratan_bali_3000x1000.jpg?q=60&w=1920&h=685");
+}
+
+.hero-paris::before {
+    background-image: url("https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1440");
+}
+
+.hero-tokyo::before {
+    background-image: url("https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2023/09/fuji-cherry-GettyImages-1060517676-1024x600.jpeg");
+}
+
+.hero-china::before {
+    background-image: url("https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2024/11/11_magnificent_Unesco_sites_in_the_Chinese_Mainland-Traditional_Chinese_ancient_town-Eric_Yang-Gettyimages-HERO.renditionimage.1700.850.jpg");
+}
+
+.hero-london::before {
+    background-image: url("https://www.visitlondon.com/-/media/images/london/visit/things-to-do/nightlife/tower-bridge-at-night1920x1080.png?mw=800&rev=743f319d95bf47638fe287a5322c115c&hash=4EE2C2E9D2540601359FE846DC4B55C0");
+}
+
+.hero-newyork::before {
+    background-image: url("https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg");
+}
+
+.bg-secondary-subtle {
+    background-color: #e3fff2 !important;
+    border: 2px dashed var(--ocean-blue);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.bg-secondary-subtle.text-secondary {
+    color: var(--deep-teal) !important;
+}
+
+.hero-quote {
+    max-width: 600px;
+}
+
+.img-placeholder-xl {
+    height: 280px;
+}
+
+.img-placeholder-lg {
+    height: 250px;
+}
+
+.img-placeholder-md {
+    height: 150px;
+}
+
+.img-placeholder-sm {
+    height: 120px;
+}
+
+.contact-container {
+    max-width: 550px;
+}
+
+.about-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid var(--sunshine);
+}
+
+.card {
+    border: 1px solid rgba(0, 165, 207, 0.4);
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.card .bg-secondary-subtle {
+    border: 0 !important;
+    border-bottom: 3px solid var(--sunshine) !important;
+    border-radius: 0;
+}
+
+.destination-img,
+.card .img-fluid {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid var(--sunshine);
+}
+
+.card-title {
+    color: var(--deep-teal);
+    font-weight: 700;
+}
+
+.card-title a {
+    color: var(--deep-teal) !important;
+    font-weight: 700;
+}
+
+.card-title a:hover {
+    color: var(--sunset) !important;
+}
+
+.card-text.text-secondary {
+    color: #3b6272 !important;
+}
+
+.accordion-item {
+    border-color: rgba(0, 165, 207, 0.4);
+}
+
+.accordion-button {
+    color: var(--deep-teal);
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e3fff2;
+    color: var(--deep-teal);
+    border-bottom: 3px solid var(--sunshine);
+}
+
+.accordion-button:focus {
+    border-color: var(--ocean-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 165, 207, 0.25);
+}
+
+.accordion-body {
+    color: var(--ink);
+}
+
+.btn-dark {
+    background-color: var(--sunset);
+    border-color: var(--sunset);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: var(--deep-teal);
+    border-color: var(--deep-teal);
+    color: #ffffff;
+}
+
+.form-label {
+    color: var(--deep-teal);
+    font-weight: 600;
+}
+
+.form-control {
+    border-color: rgba(0, 78, 100, 0.35);
+}
+
+.form-control:focus {
+    border-color: var(--ocean-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 165, 207, 0.25);
+}
+
+footer.bg-dark {
+    background-color: var(--deep-teal) !important;
+    border-top: 4px solid var(--ocean-blue);
+    color: #cfeff7 !important;
+}
+
+footer .text-white {
+    color: var(--mint) !important;
+}
+
+footer .text-white-50 {
+    color: #cfeff7 !important;
+}
+
+footer a.text-white-50:hover {
+    color: var(--sunshine) !important;
+}
+
+footer hr {
+    border-color: var(--ocean-blue);
+    opacity: 0.6;
+}
+
+.about-offer {
+    background-color: #f2fcf8;
+    border-top: 1px solid rgba(0, 165, 207, 0.25);
+    border-bottom: 1px solid rgba(0, 165, 207, 0.25);
+}
+
+.section-intro {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-card {
+    height: 100%;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--mint);
+    border: 3px solid var(--sunshine);
+}
+
+.explore-section {
+    background: linear-gradient(135deg, var(--deep-teal) 0%, #007a9c 100%);
+    border-top: 4px solid var(--sunshine);
+    border-bottom: 4px solid var(--ocean-blue);
+    color: #ffffff;
+}
+
+.explore-section .explore-text {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d9f6ee;
+}
+
+.explore-section .explore-tagline {
+    color: var(--sunshine);
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3e%3c/svg%3e");
+}
+
+.faq-container {
+    max-width: 750px;
+}
+
+.faq-container .accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 165, 207, 0.4);
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.faq-container .accordion-button {
+    padding: 1.1rem 1.25rem;
+}
+
+.faq-container .accordion-body {
+    padding: 1.25rem;
+    line-height: 1.7;
+}
+
+.faq-help {
+    background-color: #f2fcf8;
+    border: 1px solid rgba(0, 165, 207, 0.25);
+    border-bottom: 3px solid var(--sunshine);
+    border-radius: 0.6rem;
+    padding: 2rem 1.5rem;
+}
